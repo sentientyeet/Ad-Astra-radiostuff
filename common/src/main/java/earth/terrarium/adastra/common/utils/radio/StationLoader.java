@@ -26,7 +26,7 @@ public class StationLoader {
     public static void init() {
         JsonObject object = readLocalStations();
         if (object == null) {
-            object = WebUtils.getJson("https://votv.dev/churgis32/stations.json");
+            object = WebUtils.getJson("https://votv.dev/churgis32/stations");
         }
 
         if (object == null) return;
