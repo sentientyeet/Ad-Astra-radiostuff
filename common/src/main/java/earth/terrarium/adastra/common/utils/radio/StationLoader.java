@@ -26,7 +26,7 @@ public class StationLoader {
     public static void init() {
         JsonObject object = readLocalStations();
         if (object == null) {
-            object = WebUtils.getJson("https://adastra.terrarium.earth/stations");
+            object = WebUtils.getJson("https://votv.dev/churgis32/stations.json");
         }
 
         if (object == null) return;
